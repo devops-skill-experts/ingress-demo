@@ -1,16 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: echo
+  name: echo-deployment
+  labels:
+    app: echo
 spec:
-  replicas: 1 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echo
   template:
     metadata:
       labels:
         app: echo
     spec:
       containers:
-      - name: echo-container
+      - name: echo
         image: hashicorp/http-echo:1.0
-        ports: 
+        ports:
         - containerPort: 8080
