@@ -18,4 +18,4 @@ spec:
       - name: echo
         image: hashicorp/http-echo:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 5678
