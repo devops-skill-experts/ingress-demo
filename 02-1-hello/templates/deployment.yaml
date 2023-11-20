@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: hello-world:latest
+        image: crccheck/hello-world:latest
         ports:
         - containerPort: 8080
