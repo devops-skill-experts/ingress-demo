@@ -8,7 +8,7 @@ spec:
   - host: "echo.chalam-kitchen.com"
     http:
       paths:
-      - pathType: Prefix
+      - pathType: ImplementationSpecific
         path: "/"
         backend:
           service:
