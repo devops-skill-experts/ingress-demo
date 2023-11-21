@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: ingress-echo
 spec:
+  ingressClassName: nginx
   rules:
   - host: "echo.chalam-kitchen.com"
     http:
